@@ -5,7 +5,7 @@ import Button from "./components/button/Button";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Button title="რეგისტრაცია" mode="block" />
+      <Button />
     </main>
   );
 }

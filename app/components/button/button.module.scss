@@ -1,15 +1,14 @@
 .button {
     border: none;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
+    padding: 5px;
+    font-family: sans-serif;
     cursor: pointer;
 }
-.fill {
+.enable {
     background: white;
     color: black;
 }
-.outline {
+.disabled {
     background: rgb(130, 130, 130);
     color: rgb(85, 85, 85);
     cursor: default;

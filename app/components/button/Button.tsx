@@ -1,21 +1,22 @@
 'use client'
+import { useState } from 'react'
 import styles from './button.module.scss'
 
-type Props = {
-    title: string;
-    mode?: 'open' | 'block';
-}
-export default (props: Props) => {
-    const classes = [styles.button];
+export default () => {
 
-    if(props.mode == 'block') {
-        classes.push(styles.outline)
-    } else {
-        classes.push(styles.fill)
+    const [text, setText] = useState('')
+    const classes = [styles.button]
+
+    const inputText = (e: any) => {
+        setText(e.target.value)
     }
-
-
+    if(text.length < 8) {
+        classes.push(styles.disabled)
+    } 
     return (
-        <button className={classes.join(' ')}>{props.title}</button>
+        <div>
+            <input type="text" value={text} onChange={inputText} />
+            <button className={classes.join(' ')}>Registration</button>
+        </div>
     )
 }
