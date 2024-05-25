@@ -1,0 +1,16 @@
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fill {
+    background: white;
+    color: black;
+}
+.outline {
+    background: rgb(130, 130, 130);
+    color: rgb(85, 85, 85);
+    cursor: default;
+}
