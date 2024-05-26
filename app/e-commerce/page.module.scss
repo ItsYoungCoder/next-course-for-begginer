@@ -1,0 +1,123 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .cardMain {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .images {
+    position: relative;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .image, .hoverImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+  }
+  
+  .image img, .hoverImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hoverImage {
+    opacity: 0;
+  }
+  
+  .images:hover .hoverImage {
+    opacity: 1;
+  }
+  
+  .images:hover .image {
+    opacity: 0;
+  }
+  
+  .cardMenu {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .desc {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  
+  .category {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .noResults {
+    text-align: center;
+    font-size: 1.5em;
+    color: #777;
+    width: 100%;
+    padding: 20px;
+  }
+  
