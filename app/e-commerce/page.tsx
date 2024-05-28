@@ -14,10 +14,6 @@ export default () => {
     const getProducts = () => {
         axios.get(`https://api.escuelajs.co/api/v1/products?title=${title}`).then(result => {
             setProducts(result.data)
-
-            if(title !== result.data.title) {
-                <h1>პროდუქტი ვერ მოიძებნა</h1>
-            } 
         })
     }
 
