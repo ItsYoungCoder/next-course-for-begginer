@@ -13,6 +13,7 @@ export default () => {
             setProducts(result.data)
         })
     }, [sort, limit])
+
     return (
             <ul>
                 {

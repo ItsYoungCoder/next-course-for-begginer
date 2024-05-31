@@ -1,0 +1,19 @@
+.container {
+    /* border: 1px solid red; */
+    height: 100vh;
+    padding: 50px;
+
+}
+.subContainer {
+    border: 1px solid rgb(26, 255, 0);
+    width: 80%;
+    margin: auto;
+    height: 80%;
+}
+.item{
+    margin: 20px;
+}
+.item .span{
+    display: block;
+    font-size: 1.3rem;
+}
