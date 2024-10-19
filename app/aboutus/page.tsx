@@ -11,7 +11,7 @@ export default () => {
                 <div className={styles.item}>
                     <span onClick={() => setItems(1)} className={styles.span}>ვინ ვართ ჩვენ?</span>
                    {
-                    items === 1 ? <sub>ჩვენ ვართ ყლეები</sub> : ''
+                    items === 1 ? <sub>ჩვენ ვართ კომპანია რომელიც უზრუნველყოფს სხვადასხვა კომპანიისთვის საიტების და აპლიკაციების დამზადებას</sub> : ''
                    }
                 </div>
 
